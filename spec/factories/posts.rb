@@ -1,8 +1,7 @@
-# frozen_string_literal: true
 FactoryGirl.define do
   factory :post do
-    title "Dominion Attack"
-    body  "Something bla bla bla"
-    username "J.Raynor"
+    title 'Dominion Attack'
+    body  'Something bla bla bla'
+    username 'J.Raynor'
   end
 end
