@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require "rails_helper"
 
 RSpec.describe Api::PostsController, type: :controller do
@@ -22,23 +23,24 @@ RSpec.describe Api::PostsController, type: :controller do
   describe "GET #show" do
 
     it "assigns the requested customer as @customer" do
-      get :show, params: { id: post.id}
+      get :show, params: { id: post.id }
       expect(assigns(:post)).to eq(post)
     end
   end
 
   describe "POST #create" do
+
     it "creates a new post" do
       expect(Post.count).to eq(1)
     end
   end
 
   describe "DELETE #destroy" do
+
     it "deletes the contact" do
       expect{
         delete :destroy, params: { id: post.id }
-        }.to change(Post,:count).by(-1)
+        }.to change(Post, :count).by(-1)
     end
   end
-
 end
