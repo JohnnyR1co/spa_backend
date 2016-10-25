@@ -1,3 +1,2 @@
-# Prefer single quotes
 ruby:
-  config_file: .rubocop.yml
+  config_file: .rucobop.yml
