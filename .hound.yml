@@ -1,4 +1,4 @@
 # Prefer single quotes
-StringLiterals:
-  EnforcedStyle: single_quotes
+ruby:
+  EnforcedStyle: single_quotes, double_quotes
   Enabled: true
